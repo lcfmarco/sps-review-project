@@ -1,13 +1,13 @@
-package com.sps3.review;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReviewApplication {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReviewApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
