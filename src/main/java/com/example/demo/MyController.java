@@ -16,7 +16,7 @@ public class MyController {
     @GetMapping("/")
     List<String> getTest(){
         Datastore datastore =DatastoreOptions.newBuilder()
-        .setProjectId("sekhrivijayrcs1")
+        .setProjectId("just-strength-326117")
         .build().getService();
         //Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Task");
