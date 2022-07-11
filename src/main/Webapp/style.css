@@ -1,11 +1,11 @@
 body {background-color: black;}
-/* The navigation menu */
+/* The navigation menu /
 .navigation-bar {
     overflow: hidden;
     background-color: #333;
   }
-  
-  /* Navigation links */
+
+  / Navigation links /
   .navigation-bar a {
     float: left;
     font-size: 16px;
@@ -14,14 +14,14 @@ body {background-color: black;}
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  /* The subnavigation menu */
+
+  / The subnavigation menu /
   .extended-bar {
     float: left;
     overflow: hidden;
   }
-  
-  /* Subnav button */
+
+  / Subnav button /
   .extended-bar .subnavbutton {
     font-size: 16px;
     border: none;
@@ -32,13 +32,13 @@ body {background-color: black;}
     font-family: inherit;
     margin: 0;
   }
-  
-  /* Add a red background color to navigation links on hover */
+
+  / Add a red background color to navigation links on hover /
   .navigation-bar a:hover, .extended-bar:hover .subnavbutton {
     background-color: red;
   }
-  
-  /* Style the subnav content - positioned absolute */
+
+  / Style the subnav content - positioned absolute /
   .extended-content {
     display: none;
     position: absolute;
@@ -47,39 +47,55 @@ body {background-color: black;}
     width: 100%;
     z-index: 1;
   }
-  
-  /* Style the subnav links */
+
+  / Style the subnav links /
   .extended-content a {
     float: left;
     color: white;
     text-decoration: none;
   }
-  
-  /* Add a grey background color on hover */
+
+  / Add a grey background color on hover /
   .extended-content a:hover {
     background-color: #eee;
     color: black;
   }
-  
-  /* When you move the mouse over the subnav container, open the subnav content */
+
+  / When you move the mouse over the subnav container, open the subnav content */
   .extended-bar:hover .extended-content {
     display: block;
   }
 
+  .container {
+    background-color: aquamarine;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+
+  .title {
+    font-size: small;
+    align-self: center;
+    font-family: sans-serif;
+  }
+
   div.gallery {
-      margin: 50px;
       border: 1px solid #ccc;
-      float: left;
-      width: 180px;
+      width: 100%;
+      height: 500px;
+      background-color: green;
   }
 
   div.gallery:hover {
       border: 1px solid #777;
   }
 
-  div.gallery img {
+  .image {
       width: 100%;
       height: auto;
   }
-
-  
