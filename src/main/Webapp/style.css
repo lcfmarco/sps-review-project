@@ -1,11 +1,11 @@
 body {background-color: black;}
-/* The navigation menu /
+/* The navigation menu */
 .navigation-bar {
     overflow: hidden;
     background-color: #333;
   }
 
-  / Navigation links /
+  /* Navigation links */
   .navigation-bar a {
     float: left;
     font-size: 16px;
@@ -15,13 +15,13 @@ body {background-color: black;}
     text-decoration: none;
   }
 
-  / The subnavigation menu /
+  /* The subnavigation menu */
   .extended-bar {
     float: left;
     overflow: hidden;
   }
 
-  / Subnav button /
+  /* Subnav button */
   .extended-bar .subnavbutton {
     font-size: 16px;
     border: none;
@@ -33,12 +33,12 @@ body {background-color: black;}
     margin: 0;
   }
 
-  / Add a red background color to navigation links on hover /
+  /* Add a red background color to navigation links on hover */
   .navigation-bar a:hover, .extended-bar:hover .subnavbutton {
     background-color: red;
   }
 
-  / Style the subnav content - positioned absolute /
+  /* Style the subnav content - positioned absolute */
   .extended-content {
     display: none;
     position: absolute;
@@ -48,20 +48,20 @@ body {background-color: black;}
     z-index: 1;
   }
 
-  / Style the subnav links /
+  /* Style the subnav links */
   .extended-content a {
     float: left;
     color: white;
     text-decoration: none;
   }
 
-  / Add a grey background color on hover /
+  /* Add a grey background color on hover */
   .extended-content a:hover {
     background-color: #eee;
     color: black;
   }
 
-  / When you move the mouse over the subnav container, open the subnav content */
+  /* When you move the mouse over the subnav container, open the subnav content */
   .extended-bar:hover .extended-content {
     display: block;
   }
@@ -75,13 +75,15 @@ body {background-color: black;}
     gap: 10px;
     padding: 10px;
     margin-top: 10px;
-  }
 
+    
+  }
 
   .title {
     font-size: small;
-    align-self: center;
+    text-align: center;
     font-family: sans-serif;
+    color: white;
   }
 
   div.gallery {
@@ -97,5 +99,19 @@ body {background-color: black;}
 
   .image {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
   }
+
+  .submit {
+    text-align: center;
+    margin: auto;
+    
+  }
+
+  .button {
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+
