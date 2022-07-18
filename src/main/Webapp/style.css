@@ -137,6 +137,16 @@ body {background-color: black;}
     width: 150px;
     padding: 8px 15px;
     visibility: visible;
-    opacity: 0.7;
+    opacity: 1;
+  }
+
+  .search {
+    padding: 10px;
+    text-align: right;
+  }
+
+  .container2 {
+      background-color: black;
+      color: white;
   }
 
