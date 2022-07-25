@@ -1,27 +1,33 @@
 package com.example.demo.data;
 
+import org.apache.logging.log4j.util.StringBuilders;
+
 public class Movie {
     private final String director;
     private final String title;
-    private final String genre;
-    // private final int rating;
+    private final String image;
+    private final String rating;
 
-    public Movie(String title, String genre, String director) {
+    public Movie(String title, String image, String director, String rating) {
         this.title = title;
-        this.genre = genre;
+        this.image = image;
         this.director = director;
-        // this.rating = rating;
+        this.rating = rating;
     }
 
     public String getTitle () {
         return this.title;
     }
 
-    public String getGenre () {
-        return this.genre;
+    public String getImage () {
+        return this.image;
     }
 
     public String getDirector () {
         return this.director;
+    }
+
+    public String getRating() {
+        return this.rating;
     }
 }

@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ListMoviesServlet extends HttpServlet {
+public class ListMoviesServlet {
     @GetMapping("/list-movies")
     List<Movie> getTest() {
         Datastore datastore =DatastoreOptions.newBuilder()
@@ -33,10 +33,13 @@ public class ListMoviesServlet extends HttpServlet {
             Entity entity = results.next();
 
             String title = entity.getString("Title");
-            String genre = entity.getString("Genre");
+            String image = entity.getString("Image");
             String director = entity.getString("Director");
+            String rating = entity.getString("Rating");
+            // Integer rating = entity.("Rating");
 
-            Movie movie = new Movie(title, genre, director);
+            // Movie movie = new Movie(title, image, director, rating);
+            Movie movie = new Movie(title, image, director, rating);
             moviesList.add(movie);
         }
 
